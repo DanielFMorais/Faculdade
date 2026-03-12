@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Question4 {
 
@@ -23,6 +24,7 @@ public class Question4 {
         return -1;
     }
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         Random r = new Random();
         int vet[] = new int[20];
 
@@ -36,9 +38,16 @@ public class Question4 {
             System.out.print(i + " ");
         }
 
-        
+        System.out.println("\n\nQual valor você quer encontrar?");
+        int v = sc.nextInt();
 
+        if (buscaBinaria(vet, v) == -1){
+            System.out.println("O valor informado não esta presente no vetor.");
+        } else {
+            System.out.printf("O valor %d esta na posição %d do vetor.",v,buscaBinaria(vet, v));
+        }
 
+        sc.close();
     }
 
 }
