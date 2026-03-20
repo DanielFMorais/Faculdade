@@ -41,6 +41,8 @@ public class ListaEncadeada {
 
         dados[0] = valor;
         quantidade++;
+
+        System.out.println("-INSERIDO-");
     }
 
     //Método para inserir no final da lista, pega o indice da ultima posição e adiciona o valor lá atualizando tamb o tamanho da lista.
@@ -52,6 +54,8 @@ public class ListaEncadeada {
 
         dados[quantidade] = valor;
         quantidade++;
+        
+        System.out.println("-INSERIDO-");
     }
 
     //Método para inseriro no meio do vetor, realoca todos de tal posição em diante para frente e no local da posição, adiciona-se o valor. 
@@ -60,7 +64,7 @@ public class ListaEncadeada {
         
         if (posicao < 0 || posicao > quantidade) {
             System.out.printf("Você digitou uma posição inválida, digite uma posição entre 0 e %d", quantidade);
-            return;
+            return ;
         }
         
         if(posicao == 0){
@@ -82,6 +86,9 @@ public class ListaEncadeada {
         }
         dados[posicao] = valor;
         quantidade++;
+
+        
+        System.out.println("-INSERIDO-");
     }
 
     //Método para remover um valor do inicio, basicamente pegando todos os outros valores que estão na frente e tranzendo 1 casa para trás.
@@ -96,6 +103,9 @@ public class ListaEncadeada {
             dados[i-1] = dados[i];
         }
         quantidade--;
+
+        
+        System.out.println("-REMOVIDO-");
     }
 
     //Método para remover um valor do Final, basicamente diminuindo a quantidade de elementos, assim ignora-se o ultimo valor.
@@ -107,6 +117,9 @@ public class ListaEncadeada {
         }
 
         quantidade--;
+
+        
+        System.out.println("-REMOVIDO-");
     }
 
     //Método para remover um valor do Meio, basicamente verifica sé é no inicio ou final, se for já chama o método específico e se estiver no meio basicamente pega tudo que esta na frente e joga 1 casa para trás.
@@ -135,6 +148,8 @@ public class ListaEncadeada {
             dados[i] = dados[i+1];
         }
         quantidade--;
+
+        System.out.println("-REMOVIDO-");
     }
     
     //Método que busca na lista ate achar o valor informado e assim que localizado chama o método de remover no meio para que sera feita a remoção.
