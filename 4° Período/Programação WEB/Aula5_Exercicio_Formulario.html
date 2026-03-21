@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atividade Formulário</title>
+    </head>
+
+    <body>
+        <h1>Faça a sua reserva:</h1>
+
+        <form name="reserva" method="post"> 
+            Nome: <input type="text" name="nome_usuario" size="50" maxlength="100"><br>
+            Endereço: <input type="text" name="endereco_usuario" size="47" maxlength="100"><br>
+            Bairro: <input type="text" name="bairro_usuario" size="17" maxlength="50">
+            Cidade: <input type="text" name="cidade_usuario" size="19" maxlength="50"><br>
+            CEP: <input type="text" name="cep_usuario" size="19" maxlength="20">
+            Estado:
+            <select name="estado_usuario">
+                <option value="mg">Minas Gerais</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+            </select><br>
+            Preferência: 
+            <input type="checkbox" name="preferencia_campo" > Campo 
+            <input type="checkbox" name="preferencia_montanha" > Montanha
+            <input type="checkbox" name="preferencia_litoral"> Litoral <br>
+            Tipo de Viagem: 
+            <input type="radio" name="tipo_viagem_usuario_negocio" > Negócios
+            <input type="radio" name="tipo_viagem_usuario_passeio" > Passeio <br>
+            Sugestão: <br>
+            <textarea name="sugestao_usuario" rows="10" cols="56" placeholder="Digite sua sugestão aqui."></textarea>
+
+        </form>
+    </body>
+
+</html>
