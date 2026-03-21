@@ -14,7 +14,7 @@ public class ListaEncadeada {
     private void aumentarTamanho(){
         int novo[] = new int[dados.length + 10];
 
-        for (int i = 0; i < dados.length; i++){
+        for (int i = 0; i < quantidade; i++){
             novo[i] = dados[i];
         }
 

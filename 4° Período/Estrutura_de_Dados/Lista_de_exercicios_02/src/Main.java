@@ -34,7 +34,7 @@ public class Main {
                 [4] -REMOVER- elemento no início da Lista.
                 [5] -REMOVER- elemento no final da lista.
                 [6] -REMOVER- elemento em posição específica.
-                [7] -REMOVER- elemento expecífico da lista.
+                [7] -REMOVER- elemento específico da lista.
                 [8] -PESQUISAR- em qual posição um elemento específico esta.
                 [9] -EXIBIR- quantidade de elementos na lista
                 [0] -EXIBIR- A LISTA-
