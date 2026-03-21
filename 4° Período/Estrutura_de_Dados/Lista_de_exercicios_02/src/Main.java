@@ -19,7 +19,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        ListaEncadeada lista = new ListaEncadeada(10);
+        MetodoLista lista = new MetodoLista(10);
         Scanner sc = new Scanner(System.in);
 
         

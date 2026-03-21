@@ -1,4 +1,4 @@
-public class ListaEncadeada {
+public class MetodoLista {
     private int[] dados;
     private int quantidade;
 
@@ -23,7 +23,7 @@ public class ListaEncadeada {
     
 
     //Criando uma lista vazia, é o construtor pois a lista sempre começa vazia
-    public ListaEncadeada (int capacidade) {
+    public MetodoLista (int capacidade) {
         this.dados = new int[capacidade];
         quantidade = 0;
     }
@@ -205,6 +205,6 @@ public class ListaEncadeada {
     }
 
     public void quantidadeElementos(){
-        System.out.printf("A lista possui um total de %d elementos.", quantidade);
+        System.out.printf("A lista possui um total de %d elementos.\n", quantidade);
     }
 }
