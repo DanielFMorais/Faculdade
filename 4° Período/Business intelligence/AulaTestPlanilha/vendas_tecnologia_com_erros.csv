@@ -1,0 +1,101 @@
+id_venda,data_venda,produto,categoria,quantidade,preco_unitario,desconto,total,forma_pagamento,status,vendedor,cidade
+1,2024-03-12,Placa de Vídeo,Componentes,-3,0.0,4porcento,6083.48,null,Devolvida,Ana Lima,Porto Alegre
+2,2024-09-15,Headset,Áudio,-1,122.25,3%,118.58,Cartão de Crédito,DEVOLVIDA,Bruno Souza,Brasília
+3,2024-10-28,Placa de Vídeo,Componentes,-4,5357.29,3porcento,20786.29,PIX,Concluída,Bruno Souza,Brasília
+3,2024-06-21,Headset,Áudio,2,338.18,3%,656.07,Cartão de Crédito,Concluída,Diana Rocha,São Paulo
+3,2024-01-23,Mouse,Periféricos,5,346.62,4%,1663.78,Boleto,Devolvida,Ana Lima,Curitiba
+6,2024-07-04,Smartphone,Celulares,5,3297.75,13%,14345.21,Cartão de Débito,Concluída,Ana Lima,Brasília
+7,2024-02-21,Monitor,Periféricos,1,2091.52,13%,1819.62,Boleto,null,,Brasília
+8,2024-12-09,Gabinete,Componentes,3,418.9,5%,1193.86,PIX,null,Eduardo Nunes,Brasília
+9,2024/07/13,Tablet,Celulares,2,1975.11,2%,null,PIX,Devolvida,Bruno Souza,Brasília
+10,2024-01-17,Mouse,Periféricos,1,345.0,3%,null,PIX,Cancelada,Carlos Mendes,São Paulo
+11,2024-06-10,Monitor,Periféricos,5,2343.65,13%,10194.88,Cartão de Débito,Cancelada,Diana Rocha,Brasília
+12,2024-10-14,Webcam,,5,214.29,4%,411.44,PIX,Devolvida,Diana Rocha,Porto Alegre
+13,2024/02/16,  Headset  ,Áudio,2,353.4,8%,650.26,Cartão de Crédito,Concluída,Bruno Souza,Brasília
+14,2024/07/16,Tablet,Celulares,4,2542.57,9%,9254.95,Boleto,Devolvida,Diana Rocha,Porto Alegre
+15,2024-02-28,“Teclado”,Periféricos,1,487.85,10%,439.07,PIX,Concluído,Ana Lima,Belo Horizonte
+16,2024-05-14,Headset,Áudio,1,210.71,14%,181.21,Cartão de Débito,Devolvida,Ana Lima,Salvador
+17,2024-03-19,Placa de Vídeo,Componentes,5,3141.45,9%,14293.6,Pix,Concluída,Eduardo Nunes,Salvador
+18,2024-09-07,“Roteador”,Redes,1,441.69,9%,401.94,Cartão de Crédito,Concluída,Carlos Mendes,Salvador
+19,2024-10-17,“Fonte ATX”,Componentes,1,484.51,4%,465.13,Cartão de Crédito,Concluída,Diana Rocha,Salvador
+20,2024-03-06,Smartphone,Celulares,5,4916.34,11%,21877.71,Boleto ,Devolvida,Bruno Souza,Belo Horizonte
+21,2024-10-03,SSD,Armazenamento,4,810.7,14%,2788.81,Cartão de Débito,Concluída,Diana Rocha,Brasília
+22,2024-05-06,Placa de Vídeo,Componentes,5,3553.81,7%,16525.22,Cartão de Débito,Concluída,Carlos Mendes,São Paulo
+23,2024-02-06,Memória RAM,Componentes,5,399.26,3%,1936.41,Cartão de Crédito,Concluída,Ana Lima,São Paulo
+24,2024-12-08,Gabinete,Componentes,5,398.26,4%,1911.65,Boleto,Concluída,Eduardo Nunes,Rio de Janeiro
+25,2024-05-04,Processador,Componentes,5,3793.65,9%,17261.11,Boleto,Cancelada,Bruno Souza,São Paulo
+26,2024-08-27,Smartphone,Celulares,3,3704.13,6%,25009.31,Cartão de Crédito,Concluída,,Curitiba
+27,2024-04-07,Processador,Componentes,1,1885.77,4%,1810.34,Boleto,Concluída,Diana Rocha,Rio de Janeiro
+28,2024-10-08,Teclado,Periféricos,1,274.3,7%,255.1,Cartão de Crédito,Concluída,,Salvador
+29,2024-09-05,Notebook,Computadores,2,7829.48,2%,15345.78,Boleto,Concluída,Diana Rocha,São Paulo
+30,2024-08-20,Tablet,Celulares,4,1633.74,4%,6273.56,PIX,Cancelada,Eduardo Nunes,Brasília
+31,2024-01-30,Processador,Componentes,2,2357.35,4%,4526.11,Cartão de Crédito,Concluída,,São Paulo
+32,2024-09-17,Memória RAM,Componentes,5,364.55,2%,1786.3,Cartão de Crédito,Concluída,Ana Lima,Porto Alegre
+33,2024-10-18,Smartphone,Celulares,2,3765.81,6%,7079.72,,Devolvida,,São Paulo
+34,2024-06-10,Memória RAM,Componentes,5,186.89,8%,859.69,PIX,Concluída,Carlos Mendes,Rio de Janeiro
+35,2024-02-07,Teclado,Periféricos,3,246.23,7%,686.98,Cartão de Crédito,Cancelada,Eduardo Nunes,Porto Alegre
+36,2024-03-08,Smartphone,Celulares,2,1478.39,8%,2720.24,PIX,Concluída,Bruno Souza,Belo Horizonte
+37,2024-11-09,Teclado,Periféricos,5,146.25,11%,650.81,Cartão de Crédito,Devolvida,Carlos Mendes,Brasília
+38,2024-02-24,Smartphone,Celulares,2,4767.93,4%,9154.43,null,Concluída,Carlos Mendes,Porto Alegre
+39,2024-05-15,Monitor,Periféricos,2,1991.7,10%,3585.06,Boleto,Concluída,Ana Lima,São Paulo
+40,2024-06-19,Placa de Vídeo,Componentes,3,3829.67,1%,11374.12,Cartão de Débito,concluida,Bruno Souza,Brasília
+41,2024-02-27,Webcam,Periféricos,4,398.26,8%,1465.6,Cartão de Crédito,Concluída,Eduardo Nunes,  São Paulo  
+42,2024-03-06,Gabinete,Componentes,5,421.53,2%,2065.5,Cartão de Crédito,Concluída,Carlos Mendes,Salvador
+43,2024-05-07,Gabinete,Componentes,3,223.94,3%,651.67,Cartão de Crédito,Concluída,Eduardo Nunes,Salvador
+44,2024-05-01,Headset,Áudio,2,781.69,14%,1344.51,Cartão de Débito,Concluida,Diana Rocha,São Paulo
+45,2024-07-29,Tablet,Celulares,3,2420.44,12%,6389.96,Cartão de Débito,Concluída,Bruno Souza,
+46,2024-04-23,Processador,Componentes,1,1145.91,13%,996.94,Cartão de Débito,Cancelada,Carlos Mendes,Belo Horizonte
+47,2024-12-03,Gabinete,Componentes,2,677.21,3%,1313.79,Cartão de Débito,Cancelada,Carlos Mendes,
+48,2024-09-17,Gabinete,Componentes,3,241.65,5%,688.7,Boleto,Devolvida,Carlos Mendes,São Paulo
+49,2024/05/15,Smartphone,,3,4532.75,3%,13190.3,Cartão de Crédito,Concluída,Eduardo Nunes,Curitiba
+50,2024-09-18,Mouse,Periféricos,3,304.99,7%,850.92,Cartão de Crédito,Cancelada,Eduardo Nunes,Rio de Janeiro
+51,10/02/2024,Teclado,Periféricos,4,98.64,0%,394.56,Cartão de Débito,Concluída,Diana Rocha,São Paulo
+52,2024-03-04,Placa de Vídeo,Componentes,5,6564.24,5%,31180.14,PIX,Devolvida,Carlos Mendes,Brasília
+53,2024-04-08,Headset,Áudio,3,328.33,8%,906.19,Boleto,Cancelada,Bruno Souza,Porto Alegre
+54,2024-06-04,Memória RAM,Componentes,5,285.43,13%,1241.62,PIX,Concluída,Diana Rocha,Salvador
+55,2024-08-14,Memória RAM,Componentes,3,423.0,7%,1180.17,Cartão de Débito,Devolvida,Diana Rocha,Salvador
+56,2024-05-25,Roteador,Redes,2,677.91,10%,1220.24,PIX,Concluída,Bruno Souza,  Brasília  
+57,01/24/2024,Teclado,Periféricos,2,174.35,2%,341.73,Cartão de Débito,Cancelada,Eduardo Nunes,Salvador
+58,2024-10-21,Fonte ATX,Componentes,4,343.7,13%,1196.08,,Cancelada,Diana Rocha,Curitiba
+59,2024-02-24,Monitor,Periféricos,1,965.63,13%,840.1,Boleto,Concluída,Bruno Souza,Salvador
+60,2024-03-03,  Processador  ,Componentes,1,2457.46,8%,2260.86,Boleto,Concluída,Diana Rocha,Brasília
+61,2024-08-14,SSD,Armazenamento,5,891.52,5%,4234.72,Boleto,Devolvida,Diana Rocha,Rio de Janeiro
+62,2024-05-06,Processador,Componentes,4,3556.78,4%,13658.04,PIX,Devolvida,Diana Rocha,Brasília
+63,2024-04-30,Monitor,Periféricos,1,1194.28,11%,1062.91,PIX,Concluída,Carlos Mendes,Porto Alegre
+64,2024-03-19,Smartphone,Celulares,2,1725.82,6%,3244.54,Cartão de Débito,Concluída,Diana Rocha,Curitiba
+65,2024-08-03,Mouse,Periféricos,4,239.91,1%,950.04,Boleto,Devolvido,Ana Lima,Salvador
+66,2024-06-29,Roteador,,4,571.08,7%,2124.42,PIX,Cancelada,Diana Rocha,Porto Alegre
+67,2024-09-06,Processador,Componentes,5,3150.83,13%,13706.11,Cartão de Débito,Concluída,Diana Rocha,Curitiba
+68,2024-08-27,Notebook,Computadores,4,4638.71,11%,16513.81,,Devolvida,Eduardo Nunes,São Paulo
+69,2024-02-12,Roteador,Redes,5,366.71,10%,1650.19,Boleto,Concluída,Diana Rocha,Rio de Janeiro
+70,2024-06-16,Notebook,Computadores,3,3930.86,3%,11438.8,PIX,Cancelada,Carlos Mendes,Salvador
+71,2024-10-03,Gabinete,Componentes,1,452.94,7%,421.23,Cartão de Crédito,Concluída,Bruno Souza,Brasília
+72,2024-05-06,Smartphone,Celulares,1,4168.69,11%,3710.13,Cartão de Débito,Concluída,Eduardo Nunes,
+73,2024-04-21,Monitor,Periféricos,1,927.2,8%,853.02,Boleto,Concluída,Carlos Mendes,Rio de Janeiro
+74,2024-03-24,Memória RAM,Componentes,1,423.26,12%,372.47,,Concluída,Eduardo Nunes,São Paulo
+75,2024-04-11,Roteador,Redes,4,321.58,6%,1209.14,Cartão de Crédito,Devolvida,Bruno Souza,São Paulo
+76,2024-10-16,Processador,Componentes,5,3271.94,12%,14396.54,Cartão de Crédito,Concluída,Eduardo Nunes,Curitiba
+77,2024-01-07,Placa de Vídeo,Componentes,5,3538.14,10%,15921.63,Boleto,Cancelada,Ana Lima,Curitiba
+78,2024-08-10,Mouse,Periféricos,4,272.45,11%,969.92,Cartão de Débito,Devolvida,Carlos Mendes,Porto Alegre
+79,30-10-2024,Fonte ATX,Componentes,4,851.77,7%,3168.58,PIX,Concluída,Bruno Souza,Salvador
+80,25-08-2024,Roteador,Redes,4,197.66,4%,759.01,Boleto,Concluída,Ana Lima,Curitiba
+81,2024-05-12,Gabinete,Componentes,4,395.01,3%,1532.64,PIX,Concluída,Eduardo Nunes,
+82,2024-04-07,Roteador,Redes,1,301.95,8%,277.79,Cartao de Credito,Concluída,Diana Rocha,
+83,2024-09-08,SSD,Armazenamento,4,730.72,10%,2630.59,Boleto,Concluída,Ana Lima,Belo Horizonte
+84,2024-10-24,Monitor,Periféricos,2,1427.92,5%,2713.05,PIX,Cancelada,Eduardo Nunes,Porto Alegre
+85,2024-12-25,Mouse,Periféricos,5,198.93,5%,2118.0,Boleto,Concluída,Carlos Mendes,Belo Horizonte
+86,2024-10-01,Monitor,Periféricos,2,917.18,5%,1742.64,Cartão de Débito,Concluída,Bruno Souza,Brasília
+87,2024-09-25,Webcam,Periféricos,5,274.42,15%,1166.29,PIX,Concluída,Bruno Souza,Belo Horizonte
+88,2024-09-30,Monitor,Periféricos,3,1349.59,0%,4048.77,Cartão de Débito,Concluída,Ana Lima,São Paulo
+89,2024-09-08,SSD,Armazenamento,2,404.5,10%,728.1,Cartão de Crédito,Concluída,Eduardo Nunes,Belo Horizonte
+90,2024-01-27,Webcam,Periféricos,3,365.42,3%,1063.37,PIX,Cancelada,,Salvador
+91,2024-12-17,Smartphone,Celulares,1,2722.69,9%,2477.65,Cartão de Crédito,Concluída,Bruno Souza,Salvador
+92,2024-03-01,Memória RAM,Componentes,1,577.11,15%,490.54,Boleto,Devolvida,Eduardo Nunes,Salvador
+93,2024-08-14,Memória RAM,Componentes,5,251.56,6%,1182.33,PIX,Devolvida,Diana Rocha,Belo Horizonte
+94,2024-02-20,Memória RAM,,5,429.46,14%,1846.68,Cartão de Débito,Concluída,Carlos Mendes,Brasília
+95,2024-03-21,Smartphone,Celulares,2,1796.82,8%,3306.15,Cartão de Crédito,Cancelada,,Brasília
+96,2024-12-27,Memória RAM,Componentes,1,361.46,3%,350.62,PIX,Cancelada,,Brasília
+97,2024-04-11,Monitor,Periféricos,5,2363.04,10%,10633.68,Boleto,Concluída,Eduardo Nunes,Rio de Janeiro
+98,2024-02-06,Placa de Vídeo,Componentes,3,2319.44,12%,6123.32,Cartão de Crédito,Concluída,Carlos Mendes,Porto Alegre
+99,2024-08-27,Processador,Componentes,3,3437.57,7%,9590.82,PIX,Cancelada,Carlos Mendes,Porto Alegre
+100,2024-08-09,SSD,Armazenamento,1,545.66,9%,496.55,PIX,Devolvida,Carlos Mendes,
