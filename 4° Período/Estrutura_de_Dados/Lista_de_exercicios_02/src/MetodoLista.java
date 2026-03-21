@@ -63,7 +63,7 @@ public class MetodoLista {
     public void inserirNoMeio (int valor, int posicao){
         
         if (posicao < 0 || posicao > quantidade) {
-            System.out.printf("Você digitou uma posição inválida, digite uma posição entre 0 e %d", quantidade);
+            System.out.printf("Você digitou uma posição inválida, digite uma posição entre 0 e %d\n", quantidade);
             return ;
         }
         
@@ -131,7 +131,7 @@ public class MetodoLista {
         }
 
         if (posInvalidaRemovBusc(posicao)) {
-            System.out.printf("Você digitou uma posição inválida, digite uma posição entre 0 e %d", quantidade);
+            System.out.printf("Você digitou uma posição inválida, digite uma posição entre 0 e %d\n", quantidade);
             return;
         }
 

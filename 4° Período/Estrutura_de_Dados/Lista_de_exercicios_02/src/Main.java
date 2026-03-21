@@ -12,7 +12,7 @@ public class Main {
                 sc.nextLine(); // limpa buffer após leitura do inteiro
                 return valor;
             } catch (InputMismatchException e) {
-                System.out.println("Valor digitado INVÁLIDO! Retornando para Menu Inicial...");
+                System.out.println("Valor digitado INVÁLIDO! Tente Novamente...");
                 sc.nextLine(); // limpa buffer do valor inválido
             }
         }
