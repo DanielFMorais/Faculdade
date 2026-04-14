@@ -1,0 +1,68 @@
+body{
+    background-image: url(/images/background.jpg);
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.topo{
+    position: fixed; /* Permite ficar fixado no topo da página */
+    top: 0; /* distancia do topo da tela   */
+    left: 0; /* Distancia da esquerda */
+    width: 100%; /* largura da barra*/
+    height: 70px; /* Altura */
+    display: flex; /* Sistema de layout que facilita alinhar elementos */
+    align-items: center; /* alinha o item verticalmente no centro */
+    padding: 0px 10px;/* espaço interno a esquerda para não ficar colado */
+    text-decoration: none;
+    background-color: white;
+}
+
+.logo{
+    height: 225px;
+}
+
+.icone{
+    height: 30px;
+    padding: 30px;
+   
+}
+
+.carrinho{
+    margin-left: auto;
+}
+.menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.menu a:hover{
+    color: red;
+}
+
+.banner{  
+    background-color: white;
+    margin: 100px auto 0px auto;
+    padding: 10px ; 
+    border-radius: 20px;
+    object-fit:contain; 
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    object-position: center;
+    display: flex;
+}
+
+
+.divCenter {
+    background-color: white;
+    margin: 50px 10% 0px 10%;
+    padding: 10px 25px; 
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+}
+
+.div {
+
+}
