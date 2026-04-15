@@ -1,39 +1,77 @@
-
-<!DOCTYPE html>
+<!doctype html>
+<!-- diz que o documento é HTML5 -->
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FM Store Cube</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <!-- define o idioma como português do Brasil -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- permite usar acentos (ç, á, é, etc) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- faz o site se adaptar a celulares (responsivo) -->
+    <title>FM Store Cube</title>
+    <!-- nome que aparece na aba do navegador -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- conecta o arquivo CSS (estilo do site) -->
+    <link rel="icon" href="/images/logo2.png" type="image/x-icon" />
+    <!-- define o ícone da aba (favicon) -->
+  </head>
 
-    <body>
-        <header class="topo">
-            <a href="index.html">
-                <img src="/images/logo.png" alt="FM Store Cube Logo" class="logo">
-            </a>
-            
-            <nav class="menu">
-                <a href="index.html">Inicio</a>
-                <a href="/pages/produtos.html">Produtos</a>
-                <a href="/pages/sobre.html">Sobre</a>
-                <a href="/pages/contato.html">Contatos</a>
-            </nav>
+  <body>
+    <!-- ===== HEADER (TOPO DO SITE) ===== -->
+    <header class="topo">
+      <!-- Logo clicável (leva para a página inicial) -->
+      <a href="index.html">
+        <img src="/images/logo.png" alt="FM Store Cube Logo" class="logo" />
+        <!-- src = caminho da imagem -->
+        <!-- alt = descrição (acessibilidade e caso não carregue) -->
+      </a>
 
-            <div class="carrinho">
-                <a href="/pages/carrinho.html">
-                    <img src="/images/iconCarrinho.svg" alt="iconCarrinho" class="icone">
-                </a>
-            </div>
-        </header>
+      <!-- ===== MENU DE NAVEGAÇÃO ===== -->
+      <nav class="menu">
+        <!-- Cada <a> é um link -->
+        <a href="index.html">Inicio</a> <!-- volta pra home -->
+        <a href="/pages/produtos.html">Produtos</a> <!-- página de produtos -->
+        <a href="/pages/sobre.html">Sobre</a> <!-- página sobre -->
+        <a href="/pages/contato.html">Contatos</a> <!-- página contato -->
+      </nav>
 
-        <img src="/images/banner.jpeg" alt="banner cubo magico" class="banner">
+      <!-- ===== CARRINHO ===== -->
+      <div class="carrinho">
+        <!-- Link para página do carrinho -->
+        <a href="/pages/carrinho.html">
+          <img src="/images/iconCarrinho.svg" alt="iconCarrinho"class="icone"/> <!-- ícone do carrinho -->
+        </a>
+      </div>
+    </header>
 
-        <div class="divCenter">
-            <h1>teste</h1>
-        </div>
+    <!-- ===== BANNER PRINCIPAL ===== -->
+    <img src="/images/banner.jpeg" alt="banner cubo magico" class="banner" />
 
+    <!-- ===== TÍTULO DE PROMOÇÕES ===== -->
+    <div class="divPromo">
+      <h1>Promoções!!!!!</h1>
+    </div>
 
-    </body>
+    <!-- ===== PRODUTOS EM DESTAQUE ===== -->
+    <div class="divCenter">
+      <!-- container que segura os produtos -->
+
+      <!-- ===== PRODUTO 1 ===== -->
+      <div class="produto">
+        <img src="/images/cubo1.jpg" alt="Produto 1" />
+        <h3>Cubo Profissional 3x3</h3>
+        <p class="preco-antigo">R$ 80,00</p> <!-- preço antigo (vai aparecer riscado no CSS) -->
+        <p class="preco">R$ 49,90</p> <!-- preço atual (destaque) -->
+        <button>Adicionar ao carrinho</button> <!-- botão de ação (ainda não funciona sem JavaScript) -->
+      </div>
+
+      <!-- ===== PRODUTO 2 ===== -->
+      <div class="produto">
+        <img src="/images/cubo2.jpg" alt="Produto 2" />
+        <h3>Cubo Magnético 3x3</h3>
+        <p class="preco-antigo">R$ 129,90</p>
+        <p class="preco">R$ 85,40</p>
+        <button>Adicionar ao carrinho</button>
+      </div>
+    </div>
+  </body>
 </html>

@@ -1,30 +1,89 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- define HTML5 -->
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FM Store Cube - Contato</title>
-        <link rel="stylesheet" href="/style.css">
-    </head>
+  <!-- idioma -->
 
-    <body>
-        <header class="topo">
-            <a href="/index.html">
-                <img src="/images/logo.png" alt="FM Store Cube Logo" class="logo">
-            </a>
-            
-            <nav class="menu">
-                <a href="index.html">Inicio</a>
-                <a href="/pages/produtos.html">Produtos</a>
-                <a href="/pages/sobre.html">Sobre</a>
-                <a href="/pages/contato.html">Contatos</a>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- permite acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- deixa o site responsivo (funciona no celular) -->
+    <title>Contato - FM Store Cube</title>
+    <!-- nome da aba -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- conecta o CSS -->
+    <link rel="icon" href="/images/logo2.png" type="image/x-icon" />
+    <!-- ícone da aba -->
+  </head>
 
-            <div class="carrinho">
-                <a href="/pages/carrinho.html">
-                    <img src="/images/iconCarrinho.svg" alt="iconCarrinho" class="icone">
-                </a>
-            </div>
-        </header>
-    </body>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header class="topo">
+
+      <!-- Logo clicável -->
+      <a href="../index.html">
+        <img src="/images/logo.png" alt="FM Store Cube Logo" class="logo" />
+      </a>
+
+      <!-- MENU -->
+      <nav class="menu">
+        <a href="../index.html">Inicio</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contatos</a>
+      </nav>
+
+      <!-- Carrinho -->
+      <div class="carrinho">
+        <a href="carrinho.html">
+          <img src="/images/iconCarrinho.svg" alt="iconCarrinho" class="icone"/>
+        </a>
+      </div>
+
+    </header>
+
+    <!-- ===== BANNER ===== -->
+    <div class="banner-contato">
+      <h1>Fale com a gente</h1>
+      <!-- título principal -->
+
+      <p>Tem alguma dúvida? Envie uma mensagem</p>
+      <!-- texto de apoio -->
+    </div>
+
+    <!-- ===== CONTAINER PRINCIPAL ===== -->
+    <div class="contato-container"> <!-- segura o formulário + informações -->
+
+      <!-- ===== FORMULÁRIO ===== -->
+      <form class="form-contato">
+        <!-- Campo de nome -->
+        <input type="text" placeholder="Seu nome" required />
+        <!-- type="text" = texto normal -->
+        <!-- placeholder = texto dentro do campo -->
+        <!-- required = obrigatório -->
+
+        <!-- Campo de email -->
+        <input type="email" placeholder="Seu email" required />
+        <!-- type="email" já valida automaticamente -->
+
+        <!-- Campo de mensagem -->
+        <textarea placeholder="Sua mensagem..." rows="5" required></textarea>
+        <!-- textarea = campo grande -->
+        <!-- rows define altura -->
+
+        <!-- Botão -->
+        <button type="submit">Enviar mensagem</button>
+        <!-- envia o formulário (mas ainda não faz nada sem JS/backend) -->
+      </form>
+
+      <!-- ===== INFORMAÇÕES LATERAIS ===== -->
+      <div class="contato-info">
+        <h2>Outros contatos</h2>
+
+        <p>Email: contato@fmstorecube.com</p>
+        <p>WhatsApp: (31) 99999-9999</p>
+        <p>Belo Horizonte - MG</p>
+      </div>
+    </div>
+  </body>
 </html>

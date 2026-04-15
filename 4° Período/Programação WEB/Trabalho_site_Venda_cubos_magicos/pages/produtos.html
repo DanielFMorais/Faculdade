@@ -1,30 +1,126 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- define que o documento é HTML5 -->
+
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FM Store Cube - Produtos</title>
-        <link rel="stylesheet" href="/style.css">
-    </head>
+  <!-- idioma da página -->
 
-    <body>
-        <header class="topo">
-            <a href="/index.html">
-                <img src="/images/logo.png" alt="FM Store Cube Logo" class="logo">
-            </a>
-            
-            <nav class="menu">
-                <a href="index.html">Inicio</a>
-                <a href="/pages/produtos.html">Produtos</a>
-                <a href="/pages/sobre.html">Sobre</a>
-                <a href="/pages/contato.html">Contatos</a>
-            </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- permite usar acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- faz o site funcionar corretamente em celular -->
+    <title>Produtos - FM Store Cube</title>
+    <!-- nome da aba do navegador -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- conecta o CSS (como está dentro de /pages, precisa voltar uma pasta com ../) -->
+    <link rel="icon" href="/images/logo2.png" type="image/x-icon" />
+    <!-- ícone da aba -->
+  </head>
 
-            <div class="carrinho">
-                <a href="/pages/carrinho.html">
-                    <img src="/images/iconCarrinho.svg" alt="iconCarrinho" class="icone">
-                </a>
-            </div>
-        </header>
-    </body>
+  <body>
+    <!-- ===== HEADER (TOPO DO SITE) ===== -->
+    <header class="topo">
+      <!-- Logo clicável -->
+      <a href="../index.html">
+        <img src="/images/logo.png" alt="FM Store Cube Logo" class="logo" />
+      </a>
+
+      <!-- ===== MENU ===== -->
+      <nav class="menu">
+        <a href="../index.html">Inicio</a>
+        <!-- volta pra home -->
+        <a href="produtos.html">Produtos</a> <!-- página atual -->
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contatos</a>
+      </nav>
+
+      <!-- ===== CARRINHO ===== -->
+      <div class="carrinho">
+        <a href="carrinho.html">
+          <img src="/images/iconCarrinho.svg" alt="iconCarrinho" class="icone"/>
+        </a>
+      </div>
+    </header>
+
+    <!-- ===== TÍTULO DA PÁGINA ===== -->
+    <div class="banner-produtos">
+      <h1>Nossos Produtos!!</h1> <!-- título principal -->
+    </div>
+
+    <!-- ===== GRID DE PRODUTOS ===== -->
+    <div class="grid-produtos"> <!-- esse container usa GRID no CSS (organiza automaticamente) -->
+
+      <!-- ===== PRODUTO 1 ===== -->
+      <div class="produto">
+        <img src="/images/cubo1.jpg" />
+        <h3>Cubo Profissional 3x3</h3>
+        <p class="preco-antigo">R$ 80,00</p> <!-- preço antigo (riscado no CSS) -->
+        <p class="preco">R$ 49,90</p> <!-- preço atual -->
+        <button>Adicionar</button> <!-- botão (visual apenas por enquanto) -->
+      </div>
+
+      <!-- ===== PRODUTO 2 ===== -->
+      <div class="produto">
+        <img src="/images/cubo2.jpg" />
+        <h3>Cubo Magnético 3x3</h3>
+        <p class="preco-antigo">R$ 129,90</p>
+        <p class="preco">R$ 85,40</p>
+        <button>Adicionar</button>
+      </div>
+
+      <!-- ===== PRODUTO 3 ===== -->
+      <div class="produto">
+        <img src="/images/cubo3.jpg" />
+        <h3>Cubo 2x2 Speed</h3>
+        <p class="preco-antigo">R$ 60,00</p>
+        <p class="preco">R$ 39,90</p>
+        <button>Adicionar</button>
+      </div>
+
+      <!-- ===== PRODUTO 4 ===== -->
+      <div class="produto">
+        <img src="/images/cubo4.jpg" />
+        <h3>Cubo 4x4 Profissional</h3>
+        <p class="preco-antigo">R$ 150,00</p>
+        <p class="preco">R$ 110,00</p>
+        <button>Adicionar</button>
+      </div>
+
+      <!-- ===== PRODUTO 5 ===== -->
+      <div class="produto">
+        <img src="/images/cubo5.jpg" />
+        <h3>Cubo 5x5 Avançado</h3>
+        <p class="preco-antigo">R$ 200,00</p>
+        <p class="preco">R$ 159,90</p>
+        <button>Adicionar</button>
+      </div>
+
+      <!-- ===== PRODUTO 6 ===== -->
+      <div class="produto">
+        <img src="/images/cubo6.jpg" />
+        <h3>Megaminx</h3>
+        <p class="preco-antigo">R$ 180,00</p>
+        <p class="preco">R$ 139,90</p>
+        <button>Adicionar</button>
+      </div>
+
+      <!-- ===== PRODUTO 7 ===== -->
+      <div class="produto">
+        <img src="/images/cubo7.jpg" />
+        <h3>Pyraminx</h3>
+        <p class="preco-antigo">R$ 90,00</p>
+        <p class="preco">R$ 59,90</p>
+        <button>Adicionar</button>
+      </div>
+
+      <!-- ===== PRODUTO 8 ===== -->
+      <div class="produto">
+        <img src="/images/cubo8.jpg" />
+        <h3>Skewb</h3>
+        <p class="preco-antigo">R$ 95,00</p>
+        <p class="preco">R$ 65,00</p>
+        <button>Adicionar</button>
+      </div>
+    </div>
+  </body>
 </html>

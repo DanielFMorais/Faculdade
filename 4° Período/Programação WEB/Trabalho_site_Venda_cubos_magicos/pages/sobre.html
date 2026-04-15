@@ -1,30 +1,88 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- define que é HTML5 -->
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FM Store Cube - Sobre</title>
-        <link rel="stylesheet" href="/style.css">
-    </head>
+  <!-- idioma da página -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- permite usar acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- deixa o site responsivo (funciona no celular) -->
+    <title>Sobre - FM Store Cube</title>
+    <!-- nome da aba -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- conecta o CSS (como está dentro de /pages, usa ../ pra voltar) -->
+    <link rel="icon" href="/images/logo2.png" type="image/x-icon" />
+    <!-- ícone da aba -->
+  </head>
 
-    <body>
-        <header class="topo">
-            <a href="/index.html">
-                <img src="/images/logo.png" alt="FM Store Cube Logo" class="logo">
-            </a>
-            
-            <nav class="menu">
-                <a href="index.html">Inicio</a>
-                <a href="/pages/produtos.html">Produtos</a>
-                <a href="/pages/sobre.html">Sobre</a>
-                <a href="/pages/contato.html">Contatos</a>
-            </nav>
+  <body>
+    <!-- ===== HEADER (TOPO) ===== -->
+    <header class="topo">
+      <!-- Logo clicável -->
+      <a href="../index.html">
+        <img src="/images/logo.png" alt="FM Store Cube Logo" class="logo" />
+      </a>
 
-            <div class="carrinho">
-                <a href="/pages/carrinho.html">
-                    <img src="/images/iconCarrinho.svg" alt="iconCarrinho" class="icone">
-                </a>
-            </div>
-        </header>
-    </body>
+      <!-- MENU -->
+      <nav class="menu">
+        <a href="../index.html">Inicio</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contatos</a>
+      </nav>
+
+      <!-- Carrinho -->
+      <div class="carrinho">
+        <a href="carrinho.html">
+          <img src="/images/iconCarrinho.svg" alt="iconCarrinho" class="icone"/>
+        </a>
+      </div>
+    </header>
+
+    <!-- ===== BANNER DA PÁGINA ===== -->
+    <div class="banner-sobre">
+      <h1>Sobre a FM Store Cube</h1> <!-- título principal da página -->
+    </div>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <div class="sobre-container">
+      <!-- container que segura os cards (usa flex no CSS) -->
+
+      <!-- ===== CARD 1 ===== -->
+      <div class="sobre-card">
+        <h2>Quem somos</h2>
+        <!-- subtítulo -->
+
+        <p>
+          A FM Store Cube é uma loja especializada em cubos mágicos e puzzles,
+          criada para apaixonados por desafios e velocidade. Nosso objetivo é
+          oferecer produtos de qualidade com preços acessíveis.
+        </p>
+        <!-- texto explicativo -->
+      </div>
+
+      <!-- ===== CARD 2 ===== -->
+      <div class="sobre-card">
+        <h2>Nossa missão</h2>
+
+        <p>
+          Levar diversão, raciocínio e desenvolvimento lógico para todas as
+          idades, com produtos confiáveis e atendimento de qualidade.
+        </p>
+      </div>
+
+      <!-- ===== CARD 3 ===== -->
+      <div class="sobre-card">
+        <h2>Por que escolher a gente?</h2>
+
+        <!-- lista -->
+        <ul>
+          <li>✔ Produtos de alta qualidade</li>
+          <li>✔ Preços acessíveis</li>
+          <li>✔ Entrega rápida</li>
+          <li>✔ Suporte ao cliente</li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>

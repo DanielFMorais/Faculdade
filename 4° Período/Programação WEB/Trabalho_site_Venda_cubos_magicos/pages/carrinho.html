@@ -1,30 +1,108 @@
-<!DOCTYPE html>
+<!doctype html>
+<!-- define HTML5 -->
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FM Store Cube - Carrinho</title>
-        <link rel="stylesheet" href="/style.css">
-    </head>
+  <!-- idioma da página -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- permite acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- responsividade (funciona no celular) -->
+    <title>Carrinho - FM Store Cube</title>
+    <!-- nome da aba -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- conecta o CSS -->
+    <link rel="icon" href="/images/logo2.png" type="image/x-icon" />
+    <!-- ícone da aba -->
+  </head>
 
-    <body>
-        <header class="topo">
-            <a href="/index.html">
-                <img src="/images/logo.png" alt="FM Store Cube Logo" class="logo">
-            </a>
-            
-            <nav class="menu">
-                <a href="index.html">Inicio</a>
-                <a href="/pages/produtos.html">Produtos</a>
-                <a href="/pages/sobre.html">Sobre</a>
-                <a href="/pages/contato.html">Contatos</a>
-            </nav>
+  <body>
+    <!-- ===== HEADER ===== -->
+    <header class="topo">
+      <!-- Logo clicável -->
+      <a href="../index.html">
+        <img src="/images/logo.png" alt="FM Store Cube Logo" class="logo" />
+      </a>
 
-            <div class="carrinho">
-                <a href="/pages/carrinho.html">
-                    <img src="/images/iconCarrinho.svg" alt="iconCarrinho" class="icone">
-                </a>
-            </div>
-        </header>
-    </body>
+      <!-- MENU -->
+      <nav class="menu">
+        <a href="../index.html">Inicio</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contatos</a>
+      </nav>
+
+      <!-- CARRINHO -->
+      <div class="carrinho">
+        <a href="carrinho.html">
+          <img src="/images/iconCarrinho.svg" alt="iconCarrinho" class="icone" />
+        </a>
+      </div>
+    </header>
+
+    <!-- ===== TÍTULO ===== -->
+    <div class="banner-produtos">
+      <h1>Seu Carrinho</h1>
+      <!-- mostra onde o usuário está -->
+    </div>
+
+    <!-- ===== ITENS DO CARRINHO ===== -->
+    <div class="carrinho-container">
+      <!-- container principal (organiza em coluna no CSS) -->
+
+      <!-- ===== ITEM 1 ===== -->
+      <div class="item-carrinho">
+        <img src="/images/cubo1.jpg" />
+        <!-- imagem do produto -->
+
+        <div class="info">
+          <!-- área central com nome + preço -->
+
+          <h3>Cubo Profissional 3x3</h3>
+          <p>R$ 50,00</p>
+        </div>
+
+        <span class="quantidade">Qtd: 1</span>
+        <!-- quantidade do produto -->
+      </div>
+
+      <!-- ===== ITEM 2 ===== -->
+      <div class="item-carrinho">
+        <img src="/images/cubo2.jpg" />
+        <div class="info">
+          <h3>Cubo Magnético 3x3</h3>
+          <p>R$ 85,40</p>
+        </div>
+        <span class="quantidade">Qtd: 1</span>
+      </div>
+
+      <!-- ===== ITEM 3 ===== -->
+      <div class="item-carrinho">
+        <img src="/images/cubo3.jpg" />
+        <div class="info">
+          <h3>Cubo 2x2 Speed</h3>
+          <p>R$ 39,90</p>
+        </div>
+        <span class="quantidade">Qtd: 1</span>
+      </div>
+
+      <!-- ===== ITEM 4 ===== -->
+      <div class="item-carrinho">
+        <img src="/images/cubo4.jpg" />
+        <div class="info">
+          <h3>Cubo 4x4 Profissional</h3>
+          <p>R$ 110,00</p>
+        </div>
+        <span class="quantidade">Qtd: 1</span>
+      </div>
+    </div>
+
+    <!-- ===== TOTAL DO CARRINHO ===== -->
+    <div class="total-carrinho">
+      <h2>Total: R$ 285,30</h2>
+      <!-- soma de todos os produtos -->
+
+      <button>Finalizar Compra</button>
+      <!-- botão de ação final -->
+    </div>
+  </body>
 </html>
