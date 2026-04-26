@@ -10,7 +10,7 @@ public class ListaDuplamenteEncadeada {
 
     private void posInvalida(int pos){
         if (pos < 0 || pos > tamanho) {
-            System.out.printf("Posição INVALIDA! Escolha um valor entre 0 e %d para ser válido", tamanho);
+            throw new IllegalArgumentException("Posição INVALIDA! Escolha um valor entre 0 e " + tamanho);
         }
     }
 
@@ -21,7 +21,6 @@ public class ListaDuplamenteEncadeada {
         fim = novo;
         tamanho++;
         System.out.println("~~ADICIONADO~~");
-        return;
     }
 
     private void removerValUnic(){//facilitador de caso você vá remover uma lista com somente um elemento, é basicamente o inicio e fim ser null alem de diminuir o tamanho 
@@ -31,23 +30,17 @@ public class ListaDuplamenteEncadeada {
         System.out.println("~~REMOVIDO~~");
     }
 
-    private void validacaoadd(int valor){
+    private boolean validacaoRemov(){
         if (vazia()) {
-            adicionarVazia(valor);
-            return;
-        }
-    }
-
-    private void validacaoRemov(){
-        if (vazia()) {
-            System.out.println("~~REMOVIDO~~");
-            return;
+            System.out.println("Lista vazia");
+            return false;
         }
 
         if (tamanho == 1) {
             removerValUnic();
-            return;
+            return false;
         }
+        return true;
     }
 
     //MÉTODOS DE AÇÃO--------------------------------------------------------------------------------------------------
@@ -66,13 +59,16 @@ public class ListaDuplamenteEncadeada {
     //Adição no inicio da lista com verificador de vazia, se estiver vazia vai chamar imediatamente um método de adição vazia.
     public void adicionarInicio(int valor){
 
-        validacaoadd(valor);
+        if (vazia()) {
+            adicionarVazia(valor);
+            return;
+        }
 
         Nodo novo = new Nodo();
         novo.setValor(valor);
         
-        novo.setProximo(inicio.getProximo());
-        inicio.getProximo().setAnterior(novo);
+        novo.setProximo(inicio);
+        inicio.setAnterior(novo);
         inicio = novo;
         tamanho++;
         System.out.println("~~ADICIONADO~~");
@@ -81,13 +77,16 @@ public class ListaDuplamenteEncadeada {
     //Adição no fim da lista com verificador de vazia, se estiver vazia vai chamar imediatamente um método de adição vazia.
     public void adicionarFim(int valor){
         
-       validacaoadd(valor);
+        if (vazia()) {
+            adicionarVazia(valor);
+            return;
+        }
         
         Nodo novo = new Nodo();
         novo.setValor(valor);
 
-        fim.getAnteriro().setProximo(novo);
-        novo.setAnterior(fim.getAnteriro());
+        fim.setProximo(novo);
+        novo.setAnterior(fim);
         fim = novo;
         tamanho++;
         System.out.println("~~ADICIONADO~~");
@@ -98,7 +97,10 @@ public class ListaDuplamenteEncadeada {
 
         posInvalida(pos);
         
-        validacaoadd(valor);
+        if (vazia()) {
+            adicionarVazia(valor);
+            return;
+        }
 
         if (pos == 0) {
             adicionarInicio(valor);
@@ -107,6 +109,7 @@ public class ListaDuplamenteEncadeada {
 
         if (pos == tamanho) {
             adicionarFim(valor);
+            return;
         }
 
         Nodo novo = new Nodo();
@@ -114,50 +117,43 @@ public class ListaDuplamenteEncadeada {
 
         Nodo aux;
 
-        if (pos > (tamanho - pos)) {
+        if (pos > (tamanho / 2)) {
             aux = fim;
-            for (int i = tamanho; i < pos ; i--) {
-                aux = aux.getAnteriro();
+            for (int i = tamanho - 1; i > pos; i--) {
+                aux = aux.getAnterior();
             } 
-            
-            aux.getAnteriro().setProximo(novo);
-            novo.setProximo(aux);
-            novo.setAnterior(aux.getAnteriro());
-            aux.setAnterior(novo);
-            tamanho++;
-            System.out.println("~~ADICIONADO~~");
-            return;
-        }
-
-        aux = inicio;
-        for(int i = 1; i < pos; i++ ){
-            aux = aux.getProximo();
+        } else {
+            aux = inicio;
+            for(int i = 0; i < pos; i++ ){
+                aux = aux.getProximo();
+            }
         }
         
-        aux.getAnteriro().setProximo(novo);
+        novo.setAnterior(aux.getAnterior());
         novo.setProximo(aux);
-        novo.setAnterior(aux.getAnteriro());
+        aux.getAnterior().setProximo(novo);
         aux.setAnterior(novo);
+
         tamanho++;   
         System.out.println("~~ADICIONADO~~");
     }
 
     //Remoção de valores no inicio da lista, com verificador de vazia e reutilização de outros métodos já prontos
     public void removerInicio(){
-        validacaoRemov();
+        if (!validacaoRemov()) return;
 
-        inicio.getProximo().setAnterior(null);
         inicio = inicio.getProximo();
+        inicio.setAnterior(null);
         tamanho--;
         System.out.println("~~REMOVIDO~~");
     }
 
     //Remoção de valores no final da lista, com verificador de vazia e reutilização de outros métodos já prontos
     public void removerFim(){
-        validacaoRemov();
+        if (!validacaoRemov()) return;
 
-        fim.getAnteriro().setProximo(null);
-        fim = fim.getAnteriro();
+        fim = fim.getAnterior();
+        fim.setProximo(null);
         tamanho--;
         System.out.println("~~REMOVIDO~~");
     }
@@ -166,46 +162,44 @@ public class ListaDuplamenteEncadeada {
     public void removerMeio(int pos){
         posInvalida(pos);
 
-        validacaoRemov();
+        if (!validacaoRemov()) return;
 
-        if (pos == 1){
+        if (pos == 0){
             removerInicio();
             return;
         }
 
-        if (pos == tamanho) {
+        if (pos == tamanho - 1) {
             removerFim();
             return;
         }
 
         Nodo aux;
 
-        if (pos > (tamanho - pos)) {
+        if (pos > (tamanho / 2)) {
             aux = fim;
-            for (int i = tamanho; i < pos ; i--) {
-                aux = aux.getAnteriro();
+            for (int i = tamanho - 1; i > pos; i--) {
+                aux = aux.getAnterior();
             } 
-            
-            aux.getAnteriro().setProximo(aux.getProximo());
-            aux.getProximo().setAnterior(aux.getAnteriro());            
-            tamanho--;
-            System.out.println("~~REMOVIDO~~");
-            return;
+        } else {
+            aux = inicio;
+            for(int i = 0; i < pos; i++ ){
+                aux = aux.getProximo();
+            }
         }
 
-        aux = inicio;
-        for(int i = 1; i < pos; i++ ){
-            aux = aux.getProximo();
-        }
-        aux.getAnteriro().setProximo(aux.getProximo());
-        aux.getProximo().setAnterior(aux.getAnteriro());            
+        aux.getAnterior().setProximo(aux.getProximo());
+        aux.getProximo().setAnterior(aux.getAnterior());            
         tamanho--;
         System.out.println("~~REMOVIDO~~");      
     }
 
     public void removerEspecifico(int valor){
 
-        validacaoRemov();
+        if (vazia()) {
+            System.out.println("Lista vazia");
+            return;
+        }
 
         Nodo aux = inicio;
 
@@ -220,13 +214,43 @@ public class ListaDuplamenteEncadeada {
         System.out.printf("O valor selecionado não esta presente na lista.");
     }
 
+    public void exibirLista(){
+        if (vazia()) {
+            System.out.println("Sua lista  esta vazia, não tem o que exibir.");
+            return;
+        }
+        
+        System.out.print("[ ");
     
+        Nodo atual = inicio;
 
+        while (atual != null) {
+            System.out.print(atual.getValor() + " ");
+            atual = atual.getProximo();
+        }
+    
+        System.out.println("]");
+    }
 
+    public void pesquisaPosicao(int valor){
+        if (vazia()) {
+            System.out.println("Sua lista  esta vazia, não tem o que exibir.\n");
+            return;
+        }
 
+        Nodo atual = inicio;
 
-
-
-
-
+        for (int i = 0; i < tamanho; i++) {
+            if (atual.getValor() == valor) {
+                System.out.printf("O valor %d esta localizado na posição(índice) %d\n", valor, i);
+                return;
+            }
+            atual = atual.getProximo();
+        }
+        System.out.println("O valor desejado NÃO ESTA na lista. ");
+    }
+    
+    public void quantidadeElementos(){
+        System.out.printf("A lista possui um total de %d elementos.\n", tamanho);
+    }
 }

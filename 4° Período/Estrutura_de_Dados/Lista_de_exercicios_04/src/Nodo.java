@@ -30,7 +30,7 @@ public class Nodo {
     }
 
     //Retorna o valor anterior do Nodo atual
-    public Nodo getAnteriro(){
+    public Nodo getAnterior(){
         return anterior;
     }
 
