@@ -1,0 +1,290 @@
+/* ===== CONFIGURAÇÃO GERAL ===== */
+body {
+    background-image: url(/images/background.jpg); /* imagem de fundo do site */
+    background-color: rgba(0, 0, 0, 0.8); /* cor escura por trás da imagem */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===== HEADER (TOPO DO SITE) ===== */
+.topo {
+    position: fixed; /* fixa o topo na tela (não rola junto com a página) */
+    top: 0; /* encosta no topo da tela */
+    left: 0; /* encosta na esquerda */
+    width: 100%; /* ocupa toda largura da tela */
+    height: 70px; /* altura da barra */
+    display: flex; /* ativa o flexbox (organiza itens lado a lado) */
+    align-items: center; /* centraliza verticalmente os itens */
+    padding: 0px 10px; /* espaço interno lateral */
+    text-decoration: none; /* remove sublinhado (caso tenha links) */
+    background-color: white; /* fundo branco */
+    z-index: 1000;
+}
+
+/* Logo do site */
+.logo {
+    height: 60px; /* altura ajustada para caber no header de 70px */
+}
+
+/* Ícone do carrinho */
+.icone {
+    height: 30px; /* tamanho do ícone */
+    padding: 10px; /* espaço ao redor do ícone */
+}
+
+/* Carrinho vai pra direita */
+.carrinho {
+    margin-left: auto; /* empurra o carrinho pro canto direito */
+}
+
+/* Links do menu */
+.menu a {
+    margin-left: 20px; /* espaço entre os links */
+    text-decoration: none; /* remove sublinhado */
+    color: rgb(0, 0, 0); /* cor preta */
+    font-weight: bold; /* deixa o texto mais forte */
+}
+
+/* Quando passa o mouse */
+.menu a:hover {
+    color: red; /* muda a cor ao passar o mouse */
+}
+
+/* ===== BANNER PRINCIPAL ===== */
+.banner {  
+    background-color: white; /* fundo branco */
+    margin: 30px auto 0px auto; 
+    padding: 10px; /* espaço interno */
+    border-radius: 20px; /* bordas arredondadas */
+    object-fit: contain; /* mantém proporção da imagem */
+    height: 400px; /* altura fixa */
+    display: flex; /* ativa flex */
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center; /* centraliza verticalmente */
+    object-position: center; /* centraliza imagem dentro do espaço */
+}
+
+/* ===== TÍTULO DE PROMOÇÃO ===== */
+.divPromo {
+    background-color: white;
+    margin: 50px 10% 0px 10%; /* espaço lateral e superior */
+    padding: 10px 25px; 
+    display: flex; /* ativa flex */
+    justify-content: center; /* centraliza o texto */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8); /* sombra forte */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* fonte */
+    color: red; /* cor do texto */
+}
+
+/* ===== CONTAINER DE PRODUTOS (HOME) ===== */
+.divCenter {
+    background-color: white;
+    margin: 50px auto; /* centraliza na página */
+    padding: 20px;
+    display: flex; /* produtos lado a lado */
+    justify-content: center; /* centraliza eles */
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+    width: fit-content; /* largura se adapta ao conteúdo */
+}
+
+/* ===== CARD DE PRODUTO ===== */
+.produto {
+    width: 200px; /* largura fixa do card */
+    background: #fff; /* fundo branco */
+    border-radius: 10px; /* borda arredondada */
+    padding: 15px; /* espaço interno */
+    text-align: center; /* centraliza texto */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* sombra leve */
+}
+
+/* Imagem do produto */
+.produto img {
+    width: 100%; /* ocupa toda largura do card */
+    border-radius: 8px; /* borda arredondada */
+    height: 150px;
+    object-fit: contain;
+}
+
+/* Preço antigo */
+.preco-antigo {
+    text-decoration: line-through; /* riscado */
+    color: #999; /* cinza */
+    margin: 5px 0; /* espaçamento */
+}
+
+/* Preço atual */
+.preco {
+    color: #00a650; /* verde (promoção) */
+    font-size: 20px; /* maior */
+    font-weight: bold; /* destaque */
+}
+
+/* Botões padrão */
+button {
+    margin-top: 10px; /* espaço acima */
+    padding: 10px; /* tamanho interno */
+    background: #3483fa; /* azul */
+    color: white; /* texto branco */
+    border: none; /* remove borda */
+    border-radius: 5px; /* arredondado */
+    cursor: pointer; /* mãozinha ao passar */
+}
+
+/* ===== SOBRE ===== */
+.banner-sobre {
+    background-color: #3483fa; /* azul */
+    text-align: center;
+    padding: 10px 20px;
+    margin: 30px 10% 20px 10%;
+    border-radius: 20px;
+    color: white;
+}
+
+.sobre-container {
+    display: flex; /* cards lado a lado */
+    justify-content: center;
+    gap: 20px; /* espaço entre eles */
+    flex-wrap: wrap; /* quebra linha no celular */
+    margin: 20px 10%;
+}
+
+.sobre-card {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.sobre-card h2 {
+    margin-bottom: 10px;
+}
+
+.sobre-card ul {
+    padding-left: 20px;
+}
+
+/* ===== CONTATO ===== */
+.banner-contato {
+    background-color: #3483fa;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 30px 10% 20px 10%;
+    border-radius: 20px;
+    color: white;
+}
+
+.contato-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin: 20px 10%;
+}
+
+.form-contato {
+    display: flex;
+    flex-direction: column; /* coloca inputs um embaixo do outro */
+    gap: 10px;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.form-contato input,
+.form-contato textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc; /* borda leve */
+}
+
+.form-contato button {
+    background-color: #3483fa;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.contato-info {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ===== PRODUTOS ===== */
+.banner-produtos {
+    background-color: #3483fa;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 30px 10% 20px 10%;
+    border-radius: 20px;
+}
+
+.grid-produtos {
+    display: grid; /* ativa grid */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px; /* espaço entre produtos */
+    margin: 20px 10%;
+}
+
+/* ===== CARRINHO ===== */
+.carrinho-container {
+    margin: 20px 10%;
+    display: flex;
+    flex-direction: column; /* itens em coluna */
+    gap: 15px;
+}
+
+.item-carrinho {
+    display: flex; /* linha horizontal */
+    align-items: center; /* centraliza verticalmente */
+    justify-content: space-between; /* separa os elementos */
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.item-carrinho img {
+    width: 80px;
+    border-radius: 10px;
+}
+
+.info {
+    flex: 1; /* ocupa espaço do meio */
+    margin-left: 15px;
+}
+
+.quantidade {
+    font-weight: bold;
+}
+
+.total-carrinho {
+    margin: 20px 10%;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.total-carrinho button {
+    margin-top: 10px;
+    padding: 12px;
+    background-color: #00a650; /* verde (ação positiva) */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
